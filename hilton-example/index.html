@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+Banner created by 
+Joel.Semczyszyn@Gmail.com
+	-->
+
+<head>
+
+	<meta charset="utf-8" />
+
+
+	<!-- 
+	CSS 
+		-->
+
+	<style>
+
+	.uk-panel.uk-panel-box.widget_nav_menu,
+	.uk-container.uk-container-center.testimonials.uk-contrast {
+		display: none;
+	}
+
+	.bottom-bar,
+	.slide1,
+	.slide2,
+	.slide3,
+	.slide3-1 {
+		z-index: 2;
+	}
+
+	#bottom-bar-button {
+		-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+		-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+		box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+	}
+
+	</style>
+
+
+	<!-- 
+	Scripts 
+		-->
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSRulePlugin.min.js"></script>
+
+
+	<!-- 
+	Clicktag
+		-->
+
+
+	<script type="text/javascript">
+	    var clickTag = "";
+	    console.log(clickTag);
+	</script>
+
+</head>
+
+<body>
+
+	<div id="banner" style="overflow: hidden; height: 250px; width: 300px; position: absolute; background-color: rgb(0, 0, 0);">
+
+		<canvas id="myCanvas" width="300px" height="800px" style="position: absolute; z-index: 1; mix-blend-mode: multiply; top: 60px;"></canvas>
+
+		<div id="background" style="height: 250px; width: 300px; position: absolute; background-image: url(&quot;miami-background.jpg&quot;); background-size: contain; background-repeat: no-repeat; background-blend-mode: multiply;"></div>
+
+
+		<!--
+		Slide 1
+			-->
+
+
+		<div class="slide1" style="background-image: url(&quot;slide-1-1.png&quot;); height:49px; width: 300px; position:absolute; background-repeat: no-repeat; top:10px"></div>
+
+		<div class="slide1" style="background-image: url(&quot;slide-1-2.png&quot;); height:46px; width: 300px; position:absolute; background-repeat: no-repeat; top:60px;"></div>
+
+		<div class="slide1" style="background-image: url(&quot;slide-1-3.png&quot;); height:47px; width: 300px; position:absolute; background-repeat: no-repeat; top:110px;"></div>
+
+
+		<!-- 	
+		Bottom Bar 	
+			-->
+
+
+		<div class="bottom-bar-container">
+
+			<div class="bottom-bar" style="background-image: url(&quot;bottom-buttons-1.png&quot;); height:47px; width: 300px; position:absolute; background-repeat: no-repeat; top:180px; left:37px"></div>
+
+			<div class="bottom-bar" id="bottom-bar-button" style="background-image: url(&quot;bottom-buttons-2.png&quot;); height:36px; width: 97px; position:absolute; background-repeat: no-repeat; top:180px; left:159px;"></div>
+
+			<div class="bottom-bar-shine-container" style="overflow: hidden; height:36px; width: 97px; position:absolute; background-repeat: no-repeat; top:180px; left:159px;">
+
+				<canvas id="bottom-bar-shine" width="50px" height="36px" style="position: relative; left: -40px; z-index: 2; mix-blend-mode: overlay;"></canvas>
+
+			</div>
+
+		</div>
+
+
+		<!-- 	
+		Slide 2
+			-->
+
+
+		<div class="slide2" style="background-image: url(&quot;slide-2-1.png&quot;); height:25px; width: 300px; position:absolute; background-repeat: no-repeat; top:19px; left:60px;"></div>
+
+		<div class="slide2" style="background-image: url(&quot;slide-3-1.png&quot;); height:25px; width: 300px; position:absolute; background-repeat: no-repeat; background-size:contain; top:47px; left:100px;"></div>
+
+		<div class="slide2" style="background-image: url(&quot;slide-2-3.png&quot;); height:32px; width: 300px; position:absolute; background-repeat: no-repeat; top:78px; left:18px"></div>
+
+		<div class="slide2" style="background-image: url(&quot;slide-2-4.png&quot;); height:22px; width: 300px; position:absolute; background-repeat: no-repeat; top:221px; left:35px;"></div>
+
+
+		<!-- 	
+		Slide 3 	
+			-->
+
+
+		<div class="slide3" style="background-image: url(&quot;slide-3-1.png&quot;); height:49px; width: 300px; position:absolute; background-repeat: no-repeat; top:22px; left:50px;"></div>
+
+		<div class="slide3" style="background-image: url(&quot;slide-3-2.png&quot;); height:32px; width: 300px; position:absolute; background-repeat: no-repeat; top:78px; left:48px;"></div>
+
+		<div class="slide3" style="background-image: url(&quot;slide-3-3.png&quot;); height:7px; width: 300px; position:absolute; background-repeat: no-repeat; background-size:contain; top:226px; left:100px;"></div>
+
+
+		<!-- 
+		Overlay 
+			-->
+
+
+		<div id="banner-overlay" style="cursor: pointer; overflow: hidden; height: 250px; width: 300px; position: absolute; z-index:10" onclick="window.open(window.clickTag)"></div>
+
+		<script type="text/javascript" src="main.js"></script>
+
+	</div>
+
+</body>
